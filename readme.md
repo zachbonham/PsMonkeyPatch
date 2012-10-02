@@ -5,12 +5,13 @@ Just thinking out loud if there is any value here.  The original intent was to p
 
 e.g. if I'm writing some Posh code and using default implementation
 
+``` xml
    import-module .\connectionstrings.ps1
 
    $connection_string = get_connection_string $context
 
    # use connection string
-
+```
 
 Now maybe I need to patch a couple of functions in connectionstrings.ps1, e.g. change the default behavior to load from xml for *my* instance:
 
