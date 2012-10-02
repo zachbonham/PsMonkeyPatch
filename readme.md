@@ -5,7 +5,7 @@ Just thinking out loud if there is any value here.  The original intent was to p
 
 e.g. if I'm writing some Posh code and using default implementation
 
-``` xml
+``` powershell
    import-module .\connectionstrings.ps1
 
    $connection_string = get_connection_string $context
@@ -15,6 +15,7 @@ e.g. if I'm writing some Posh code and using default implementation
 
 Now maybe I need to patch a couple of functions in connectionstrings.ps1, e.g. change the default behavior to load from xml for *my* instance:
 
+``` powershell
  import-module .\connectionstrings.ps1
  import-module .\connectionstrings_patched.ps1
 
@@ -23,7 +24,7 @@ Now maybe I need to patch a couple of functions in connectionstrings.ps1, e.g. c
  $connection_string = get_connection_string $context
 
  # use connection string
-
+```
 
 Additionally, most powershell is not written as an object.  At least I know I don't.  e.g.  we have a suite of admin functions that get connection strings, servers, and other miscellaneous metadata. Its implemented in a 'module' as well known functions - not as any class(es).
 
