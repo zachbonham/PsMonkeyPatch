@@ -1,4 +1,5 @@
-*** PowerShell Monkey Patching ***
+PowerShell Monkey Patching
+=========================== 
 
 Just thinking out loud if there is any value here.  The original intent was to provide a way to enable testing dependencies easily in powershell - without dipping into C#.  However, maybe default behavior doesn't work and we need to change that behavior (e.g. pulling data from xml file instead of SharePoint).
 
